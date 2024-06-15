@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="-35dp">
+
+        <ImageView
+            android:id="@+id/coverImageView"
+            android:layout_width="237dp"
+            android:layout_height="236dp"
+            android:layout_below="@+id/artistTextView"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="87dp"
+            android:layout_marginTop="33dp"
+            android:layout_marginEnd="86dp"
+            android:layout_weight="1"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/titleTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="106dp"
+            android:text="Song Title"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/artistTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/titleTextView"
+            android:layout_marginTop="8dp"
+            android:text="Artist Name"
+            android:textAlignment="center"
+            android:textSize="14sp" />
+
+        <SeekBar
+            android:id="@+id/seekBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/coverImageView"
+            android:layout_marginTop="39dp" />
+
+        <TextView
+            android:id="@+id/txt_timeStart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/coverImageView"
+            android:paddingStart="10dp"
+            android:paddingTop="10dp"
+            android:text="00:00" />
+
+        <TextView
+            android:id="@+id/txt_totalTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/coverImageView"
+            android:layout_alignParentEnd="true"
+            android:paddingTop="10dp"
+            android:paddingEnd="10dp"
+            android:text="00:00" />
+
+        <LinearLayout
+            android:id="@+id/controlLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/seekBar"
+            android:layout_marginTop="32dp"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/loopButton"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="10dp"
+                android:src="@drawable/loop" />
+
+            <ImageView
+                android:id="@+id/prevButton"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="10dp"
+                android:src="@drawable/previous" />
+
+            <ImageView
+                android:id="@+id/playPauseButton"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_margin="10dp"
+                android:adjustViewBounds="false"
+                android:src="@drawable/pause" />
+
+            <ImageView
+                android:id="@+id/nextButton"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="10dp"
+                android:src="@drawable/next" />
+
+            <ImageView
+                android:id="@+id/shuffleButton"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="10dp"
+                android:src="@drawable/shuffle" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

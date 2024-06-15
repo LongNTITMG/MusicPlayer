@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/songlist"
+            android:icon="@drawable/baseline_album_24"
+            android:title="Danh sách bài hát" />
+        <item android:id="@+id/logout"
+            android:icon="@drawable/logout_icon"
+            android:title="Đăng xuất" />
+    </group>
+</menu>
